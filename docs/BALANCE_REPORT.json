@@ -1,0 +1,329 @@
+{
+  "strategy": "Greedy rank/suit geometry heuristic; no lookahead, no manual abilities, not human win rates",
+  "runs": 40,
+  "stage1WinRate": 1,
+  "medianStage": 3,
+  "stage8Wins": 0,
+  "results": [
+    {
+      "seed": "BALANCE-0",
+      "stage": 5,
+      "phase": "lost",
+      "score": 5844,
+      "bestHand": 637,
+      "actions": 109
+    },
+    {
+      "seed": "BALANCE-1",
+      "stage": 2,
+      "phase": "lost",
+      "score": 1010,
+      "bestHand": 259,
+      "actions": 47
+    },
+    {
+      "seed": "BALANCE-2",
+      "stage": 3,
+      "phase": "lost",
+      "score": 2016,
+      "bestHand": 393,
+      "actions": 68
+    },
+    {
+      "seed": "BALANCE-3",
+      "stage": 5,
+      "phase": "lost",
+      "score": 5747,
+      "bestHand": 690,
+      "actions": 119
+    },
+    {
+      "seed": "BALANCE-4",
+      "stage": 3,
+      "phase": "lost",
+      "score": 1699,
+      "bestHand": 184,
+      "actions": 82
+    },
+    {
+      "seed": "BALANCE-5",
+      "stage": 3,
+      "phase": "lost",
+      "score": 1719,
+      "bestHand": 415,
+      "actions": 53
+    },
+    {
+      "seed": "BALANCE-6",
+      "stage": 4,
+      "phase": "lost",
+      "score": 4223,
+      "bestHand": 681,
+      "actions": 104
+    },
+    {
+      "seed": "BALANCE-7",
+      "stage": 6,
+      "phase": "lost",
+      "score": 11103,
+      "bestHand": 1141,
+      "actions": 154
+    },
+    {
+      "seed": "BALANCE-8",
+      "stage": 2,
+      "phase": "lost",
+      "score": 1089,
+      "bestHand": 253,
+      "actions": 42
+    },
+    {
+      "seed": "BALANCE-9",
+      "stage": 3,
+      "phase": "lost",
+      "score": 2020,
+      "bestHand": 267,
+      "actions": 78
+    },
+    {
+      "seed": "BALANCE-10",
+      "stage": 4,
+      "phase": "lost",
+      "score": 3708,
+      "bestHand": 558,
+      "actions": 103
+    },
+    {
+      "seed": "BALANCE-11",
+      "stage": 2,
+      "phase": "lost",
+      "score": 1097,
+      "bestHand": 202,
+      "actions": 46
+    },
+    {
+      "seed": "BALANCE-12",
+      "stage": 3,
+      "phase": "lost",
+      "score": 2225,
+      "bestHand": 538,
+      "actions": 67
+    },
+    {
+      "seed": "BALANCE-13",
+      "stage": 4,
+      "phase": "lost",
+      "score": 3806,
+      "bestHand": 483,
+      "actions": 85
+    },
+    {
+      "seed": "BALANCE-14",
+      "stage": 2,
+      "phase": "lost",
+      "score": 1084,
+      "bestHand": 242,
+      "actions": 43
+    },
+    {
+      "seed": "BALANCE-15",
+      "stage": 3,
+      "phase": "lost",
+      "score": 2119,
+      "bestHand": 270,
+      "actions": 77
+    },
+    {
+      "seed": "BALANCE-16",
+      "stage": 3,
+      "phase": "lost",
+      "score": 1807,
+      "bestHand": 281,
+      "actions": 72
+    },
+    {
+      "seed": "BALANCE-17",
+      "stage": 3,
+      "phase": "lost",
+      "score": 1906,
+      "bestHand": 199,
+      "actions": 76
+    },
+    {
+      "seed": "BALANCE-18",
+      "stage": 5,
+      "phase": "lost",
+      "score": 6564,
+      "bestHand": 1113,
+      "actions": 115
+    },
+    {
+      "seed": "BALANCE-19",
+      "stage": 5,
+      "phase": "lost",
+      "score": 6807,
+      "bestHand": 924,
+      "actions": 119
+    },
+    {
+      "seed": "BALANCE-20",
+      "stage": 2,
+      "phase": "lost",
+      "score": 1067,
+      "bestHand": 273,
+      "actions": 41
+    },
+    {
+      "seed": "BALANCE-21",
+      "stage": 4,
+      "phase": "lost",
+      "score": 3226,
+      "bestHand": 424,
+      "actions": 98
+    },
+    {
+      "seed": "BALANCE-22",
+      "stage": 3,
+      "phase": "lost",
+      "score": 2102,
+      "bestHand": 252,
+      "actions": 77
+    },
+    {
+      "seed": "BALANCE-23",
+      "stage": 3,
+      "phase": "lost",
+      "score": 1887,
+      "bestHand": 314,
+      "actions": 58
+    },
+    {
+      "seed": "BALANCE-24",
+      "stage": 2,
+      "phase": "lost",
+      "score": 957,
+      "bestHand": 188,
+      "actions": 41
+    },
+    {
+      "seed": "BALANCE-25",
+      "stage": 6,
+      "phase": "lost",
+      "score": 10629,
+      "bestHand": 972,
+      "actions": 147
+    },
+    {
+      "seed": "BALANCE-26",
+      "stage": 5,
+      "phase": "lost",
+      "score": 6840,
+      "bestHand": 835,
+      "actions": 120
+    },
+    {
+      "seed": "BALANCE-27",
+      "stage": 5,
+      "phase": "lost",
+      "score": 5990,
+      "bestHand": 705,
+      "actions": 109
+    },
+    {
+      "seed": "BALANCE-28",
+      "stage": 3,
+      "phase": "lost",
+      "score": 2046,
+      "bestHand": 326,
+      "actions": 58
+    },
+    {
+      "seed": "BALANCE-29",
+      "stage": 3,
+      "phase": "lost",
+      "score": 2077,
+      "bestHand": 261,
+      "actions": 81
+    },
+    {
+      "seed": "BALANCE-30",
+      "stage": 5,
+      "phase": "lost",
+      "score": 5846,
+      "bestHand": 527,
+      "actions": 130
+    },
+    {
+      "seed": "BALANCE-31",
+      "stage": 2,
+      "phase": "lost",
+      "score": 993,
+      "bestHand": 170,
+      "actions": 43
+    },
+    {
+      "seed": "BALANCE-32",
+      "stage": 3,
+      "phase": "lost",
+      "score": 1914,
+      "bestHand": 511,
+      "actions": 58
+    },
+    {
+      "seed": "BALANCE-33",
+      "stage": 4,
+      "phase": "lost",
+      "score": 3347,
+      "bestHand": 503,
+      "actions": 83
+    },
+    {
+      "seed": "BALANCE-34",
+      "stage": 4,
+      "phase": "lost",
+      "score": 4009,
+      "bestHand": 720,
+      "actions": 83
+    },
+    {
+      "seed": "BALANCE-35",
+      "stage": 4,
+      "phase": "lost",
+      "score": 4117,
+      "bestHand": 808,
+      "actions": 83
+    },
+    {
+      "seed": "BALANCE-36",
+      "stage": 3,
+      "phase": "lost",
+      "score": 1887,
+      "bestHand": 340,
+      "actions": 57
+    },
+    {
+      "seed": "BALANCE-37",
+      "stage": 4,
+      "phase": "lost",
+      "score": 4004,
+      "bestHand": 484,
+      "actions": 104
+    },
+    {
+      "seed": "BALANCE-38",
+      "stage": 2,
+      "phase": "lost",
+      "score": 901,
+      "bestHand": 256,
+      "actions": 37
+    },
+    {
+      "seed": "BALANCE-39",
+      "stage": 3,
+      "phase": "lost",
+      "score": 2278,
+      "bestHand": 389,
+      "actions": 68
+    }
+  ]
+}

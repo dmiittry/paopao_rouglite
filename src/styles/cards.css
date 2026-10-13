@@ -1,0 +1,189 @@
+.playing-card {
+  --suit: #b52e3c;
+  position: relative;
+  border: 1px solid color-mix(in srgb, var(--suit) 62%, #dbc7a9);
+  border-radius: 5px;
+  background: linear-gradient(150deg, #fff9e9, #e6dbc5);
+  box-shadow:
+    0 2px 0 #9d9277,
+    0 3px 6px #0003;
+  min-width: 0;
+  min-height: 0;
+  padding: 0;
+  color: var(--suit);
+  display: block;
+  overflow: hidden;
+  transition:
+    box-shadow 0.15s,
+    filter 0.15s,
+    transform 0.15s;
+  isolation: isolate;
+}
+.playing-card.hearts {
+  --suit: #c33448;
+}
+.playing-card.spades {
+  --suit: #234b70;
+}
+.playing-card.clubs {
+  --suit: #267257;
+}
+.playing-card.diamonds {
+  --suit: #c4711e;
+}
+.playing-card::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border: 1px solid color-mix(in srgb, var(--suit) 15%, transparent);
+  border-radius: 2px;
+  pointer-events: none;
+}
+.card-top,
+.card-bottom {
+  position: absolute;
+  font-family: Georgia;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1;
+  z-index: 2;
+}
+.card-top {
+  top: 5px;
+  left: 5px;
+}
+.card-top > span {
+  font-size: 9px;
+  margin-left: 1px;
+}
+.card-bottom {
+  bottom: 4px;
+  right: 5px;
+  font-size: 8px;
+  transform: rotate(180deg);
+  opacity: 0.7;
+}
+.suit-big {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+  font-size: 44px;
+  font-family: Georgia;
+  opacity: 0.2;
+  line-height: 1;
+}
+.rank-big {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  font: 700 26px Georgia;
+  line-height: 1;
+  text-shadow: 0 1px 0 #fff6;
+}
+.playing-card:hover:not(:disabled) {
+  filter: brightness(1.04);
+  box-shadow:
+    0 0 0 2px #b3c29e,
+    0 6px 12px #0006;
+  z-index: 3;
+  transform: translateY(-2px);
+}
+.playing-card.selected {
+  box-shadow:
+    0 0 0 3px #f3d084,
+    0 0 22px #efd18790;
+  transform: translateY(-3px);
+  z-index: 3;
+}
+.playing-card.banish-selected {
+  box-shadow:
+    0 0 0 3px #ed977d,
+    0 0 22px #e6958290;
+}
+.playing-card.enhanced {
+  border: 2px solid #c99832;
+  box-shadow:
+    0 2px 0 #9f802f,
+    0 0 9px #e7bd4433;
+}
+.mod-badges {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  display: flex;
+  gap: 2px;
+  z-index: 3;
+}
+.mod-badges i {
+  font: 700 8px Arial;
+  background: #684e28;
+  color: #ffecaf;
+  border-radius: 2px;
+  min-width: 12px;
+  text-align: center;
+  padding: 1px 2px;
+}
+.mod-badges + .card-bottom {
+  display: none;
+}
+.empty-cell {
+  background: #0b231818;
+  border: 1px solid #b8c6a406;
+  border-radius: 5px;
+}
+.hand-slot .playing-card:hover {
+  transform: none;
+}
+.hand-slot .card-top {
+  font-size: 10px;
+}
+.hand-slot .rank-big {
+  font-size: 26px;
+}
+.hand-slot .suit-big {
+  font-size: 40px;
+}
+.hinted {
+  animation: hint-glow 0.7s ease-in-out infinite alternate !important;
+  z-index: 2;
+}
+.path-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  pointer-events: none;
+  filter: drop-shadow(0 0 5px #f3c775);
+}
+.flying-card {
+  z-index: 1000 !important;
+  pointer-events: none;
+}
+.night-mask {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  pointer-events: none;
+  z-index: 4;
+  background: radial-gradient(
+    circle 120px at var(--light-x) var(--light-y),
+    transparent 25%,
+    #08121b38 57%,
+    #050e14fc 100%
+  );
+  animation: night-arrives 1.2s ease-out;
+}
+.board-shell.night {
+  touch-action: none;
+}
+.soft-night .night-mask {
+  background: radial-gradient(
+    circle 160px at var(--light-x) var(--light-y),
+    transparent 25%,
+    #08121b38 57%,
+    #050e14f8 100%
+  );
+}

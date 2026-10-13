@@ -1,0 +1,134 @@
+#particles {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1001;
+}
+.score-overlay {
+  position: fixed;
+  z-index: 1010;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 440px;
+  max-width: 90vw;
+  padding: 32px;
+  text-align: center;
+  box-shadow:
+    0 0 0 100vmax #061619aa,
+    0 30px 80px #0008;
+}
+.score-overlay .eyebrow {
+  justify-content: center;
+}
+.score-overlay h2 {
+  font-size: 31px;
+  color: var(--gold-light);
+  margin: 20px 0;
+}
+.score-equation {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  font: 48px Georgia;
+}
+.score-equation i {
+  font: 25px Georgia;
+  align-self: center;
+  color: #92a491;
+}
+.chips-value {
+  color: #95bbca;
+}
+.mult-value {
+  color: #e2a296;
+}
+.score-step {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #acb7a5;
+  min-height: 32px;
+  margin: 18px 0;
+}
+.final-value {
+  font: 52px Georgia;
+  color: #f1d388;
+}
+.echo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    transparent 25%,
+    #ffecb566,
+    transparent 70%
+  );
+  animation: card-shine 5s infinite;
+  z-index: 2;
+  pointer-events: none;
+}
+@keyframes card-shine {
+  0%,
+  70% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}
+@keyframes hint-glow {
+  from {
+    box-shadow:
+      0 0 0 2px #e1c271,
+      0 0 5px #ffde8566;
+  }
+  to {
+    box-shadow:
+      0 0 0 3px #ffedb0,
+      0 0 18px #ffde85cc;
+  }
+}
+@keyframes night-arrives {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes chest-pulse {
+  50% {
+    text-shadow: 0 0 100px #ffc658b8;
+    transform: scale(1.04);
+  }
+}
+@keyframes float-main {
+  50% {
+    transform: translate(-40%, -9px) rotate(-2deg);
+  }
+}
+@keyframes float-left {
+  50% {
+    transform: translate(-98%, 5px) rotate(-24deg);
+  }
+}
+@keyframes float-right {
+  50% {
+    transform: translate(9%, -7px) rotate(23deg);
+  }
+}
+body[data-speed="minimal"] *,
+body[data-speed="minimal"] *::before {
+  animation: none !important;
+  transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before {
+    animation: none !important;
+    transition: none !important;
+  }
+}
